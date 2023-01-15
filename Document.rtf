@@ -1,0 +1,104 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs40\lang9 Differences between Document and Window Objects\par
+\b0\fs28 we will see the Document object & Window object, their various properties & methods, along with knowing their implementation & the differences between them.\par
+\b\fs32 Document Object: \b0\fs28 The document object represent a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.\par
+\b\fs36 Syntax:\b0\fs28\par
+\par
+document.property_name;\par
+
+\pard\sa200\sl276\slmult1\b\fs36 Properties of document:\b0\fs28\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 activeElement: It returns the currently active elements in the document.\par
+{\pntext\f1\'B7\tab}body: It returns the contents of the body element.\par
+{\pntext\f1\'B7\tab}anchors: It returns all <a> elements that have a name attribute.\par
+{\pntext\f1\'B7\tab}baseURI: It returns a string value that represents the base URI of the document.\par
+{\pntext\f1\'B7\tab}cookie: It returns the cookie of the current document.\par
+{\pntext\f1\'B7\tab}charSet: It returns a string, representing the document\rquote s character encoding.\par
+{\pntext\f1\'B7\tab}defaultView: It returns the current Window Object.\par
+{\pntext\f1\'B7\tab}designMode: It is used to set documents as editable or read-only.\par
+{\pntext\f1\'B7\tab}domain: It returns the domain name of the document server.\par
+{\pntext\f1\'B7\tab}doctype: It returns the document\rquote s doctype.\par
+{\pntext\f1\'B7\tab}embeds: It returns the collection of all embedded elements.\par
+{\pntext\f1\'B7\tab}URL: It returns the complete URL of the document.\par
+{\pntext\f1\'B7\tab}forms: It returns all the elements of the form.\par
+{\pntext\f1\'B7\tab}fullScreenElement: It returns the element that is currently present in full-screen mode.\par
+{\pntext\f1\'B7\tab}title: It returns the title element of the document.\par
+{\pntext\f1\'B7\tab}head: It returns the head element of the document.\par
+{\pntext\f1\'B7\tab}links: It returns all <area> and <a> elements that have a href attribute.\par
+{\pntext\f1\'B7\tab}lastModified: It returns the date and time of the current document that was last modified.\par
+{\pntext\f1\'B7\tab}images: It returns the collection of <img> elements in the document.\par
+{\pntext\f1\'B7\tab}implementation: It returns the DOMImplementation object associated with the current document.\par
+{\pntext\f1\'B7\tab}readyState: It returns the loading status of the current document.\par
+{\pntext\f1\'B7\tab}referrer: It returns the URI of the page that is linked to the current page.\par
+{\pntext\f1\'B7\tab}scripts: It returns all script elements present in the document.\par
+{\pntext\f1\'B7\tab}strictErrorChecking: It sets or returns whether strict error checking can be enforced on a document or not.\b\fs40\par
+
+\pard\sa200\sl276\slmult1\fs36 Methods of Document:\b0\fs28\par
+\par
+\b\fs32 Syntax:\b0\fs28\par
+\par
+document.method_name;\par
+\b\fs36 The lists of most commonly used methods are listed below:\par
+\b0\fs28\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 addEventListener(): It is used to attach an event handler to the specified element.\par
+{\pntext\f1\'B7\tab}adoptNode(): It is used to adopt a node from another document and it returns a node object, representing the adopted node.\par
+{\pntext\f1\'B7\tab}close(): It is used to close the output stream.\par
+{\pntext\f1\'B7\tab}createAttribute(): It is used to create an attribute node with the specified name and returns the attribute object.\par
+{\pntext\f1\'B7\tab}createComment(): It is used to create a comment node with some text.\par
+{\pntext\f1\'B7\tab}createDocumentFragment(): It is used to create the document fragment to change the content of the document.\par
+{\pntext\f1\'B7\tab}createElement(): It is used to create HTML element .\par
+{\pntext\f1\'B7\tab}createEvent(): It is used to create a new events object.\par
+{\pntext\f1\'B7\tab}createTextNode(): It is used to create a textnode.\par
+{\pntext\f1\'B7\tab}execCommand(): It is used to execute a command specified by the user on the editable selected section. It returns a Boolean value.\par
+{\pntext\f1\'B7\tab}fullscreenEnabled(): It is used to check whether the document can be viewed in fullscreen mode or not. It returns a boolean value.\par
+{\pntext\f1\'B7\tab}getElementById(): It returns the object of the given ID. If no object with that id exists then it returns null.\par
+{\pntext\f1\'B7\tab}getElementsByClassName(): It returns an object containing all the elements with the specified class names in the document as objects.\par
+{\pntext\f1\'B7\tab}getElementsByName(): It returns an object containing all the elements with the specified name in the document as objects.\par
+{\pntext\f1\'B7\tab}getElementsByTagName(): It returns an object containing all the elements with the specified tag names in the document as objects.\par
+{\pntext\f1\'B7\tab}hasFocus(): It returns a boolean value that indicates whether the document or element has focus or not.\par
+{\pntext\f1\'B7\tab}importNode(): It imports the copy of a node from another document in the current document.\par
+{\pntext\f1\'B7\tab}normalize(): It flushes out the empty nodes and merges the adjacent text nodes with the first text node and\par
+{\pntext\f1\'B7\tab}normalizeDocument(): It is used to normalize an HTML document by removing any empty text nodes and joining the adjacent text nodes.\par
+{\pntext\f1\'B7\tab}open(): It is used to open the output stream to collect the output.\par
+{\pntext\f1\'B7\tab}querySelector(): It returns the first element that matches a specified CSS selector(s) in the document.\par
+{\pntext\f1\'B7\tab}querySelectorAll(): It returns a collection of an element\rquote s child elements that matches a specified CSS selector(s) in the document\par
+{\pntext\f1\'B7\tab}removeEventListener(): It removes the event handler from an element that has an attached event.\par
+{\pntext\f1\'B7\tab}renameNode(): It is used to rename the node.\par
+{\pntext\f1\'B7\tab}write(): It is used to write some content or javascript code in the document.\par
+{\pntext\f1\'B7\tab}writeln(): It is used to write a document with a newline character after each statement.\b\fs40\par
+
+\pard\sa200\sl276\slmult1\fs36 Window Object\b0\fs28 :\par
+ The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created. \par
+\b\fs36 syntex\fs40\par
+\b0\fs28 window.property_name;\par
+\b\fs36 Methods of Window:\b0\fs28\par
+\b\fs36 Syntax:\b0\fs28\par
+window.method_name;\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 alert(): It is used to display an alert box. It displays a specified message along with an OK button and is generally used to make sure that the information comes through the user.\par
+{\pntext\f1\'B7\tab}atob(): It is used for decoding a base-64 encoded string. It is used to decode a string of data that has been encoded using the btoa() method.\par
+{\pntext\f1\'B7\tab}blur(): It is used to remove focus from the current window.\par
+{\pntext\f1\'B7\tab}btoa(): It is used for encoding a string in base-64 format.\par
+{\pntext\f1\'B7\tab}clearInterval(): It clears the interval which has been set by the setInterval() function before that.\par
+{\pntext\f1\'B7\tab}clearTimeout(): It clears the timeout which has been set by the setTimeout()function before that.\par
+{\pntext\f1\'B7\tab}close(): It is used for closing a certain window or tab of the browser which was previously opened.\par
+{\pntext\f1\'B7\tab}confirm(): It is used to display a modal dialog with an optional message and two buttons i.e. OK and Cancel. It returns true if the user clicks \ldblquote OK\rdblquote , and false otherwise.\par
+{\pntext\f1\'B7\tab}focus(): It is used to give focus to an element in the current window.\par
+{\pntext\f1\'B7\tab}getComputedStyle(): It is used to get all the computed CSS properties and values of the specified element.\par
+{\pntext\f1\'B7\tab}getSelection(): It returns a Selection object representing the range of text selected by the user\par
+{\pntext\f1\'B7\tab}matchMedia(): It is used to return a MediaQueryList object which represents the result of the specified CSS media query string.\par
+{\pntext\f1\'B7\tab}open(): It is used to open a new tab or window with the specified URL and name.\par
+{\pntext\f1\'B7\tab}moveBy(): It is used for moving a window with a specified number of pixels relative to its current coordinates.\par
+{\pntext\f1\'B7\tab}moveTo(): It is used in the window to move the window from the left and top coordinates.\par
+{\pntext\f1\'B7\tab}prompt(): It is used to display a dialog with an optional message prompting the user to input some text\par
+{\pntext\f1\'B7\tab}resizeBy(): It is used to resize a window by the specified amount.\par
+{\pntext\f1\'B7\tab}resizeTo(): It is used to resize a window to the specified width and height.\par
+{\pntext\f1\'B7\tab}scrollBy(): It is used to scroll the document by the given number of pixels.\par
+{\pntext\f1\'B7\tab}scrollTo(): It is used to scroll to a particular set of coordinates in the document.\par
+{\pntext\f1\'B7\tab}setInterval(): It repeats a given function at every given time interval.\par
+{\pntext\f1\'B7\tab}setTimeout(): It executes a function, after waiting a specified number of milliseconds.\par
+{\pntext\f1\'B7\tab}stop(): It is used to stop the window from loading resources in the current browsing context.\b\fs40\par
+}
+ 
